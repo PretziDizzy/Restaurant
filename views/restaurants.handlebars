@@ -1,0 +1,50 @@
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="/index.html">Home</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			{{!-- <li class="nav-item">
+			<a class="nav-link active" aria-current="page" href="#">Home</a>
+			</li> --}}
+			<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="/restaurants/{{id}}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				View Restaurant
+			</a>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+				{{#each restaurants}}
+				<li><a class="dropdown-item" href="/restaurants/{{id}}">{{name}}</a></li>
+				{{/each}}
+				
+			</ul>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="/new-restaurant-form">Add New Restaurant!</a>
+			</li>
+			{{!-- <li class="nav-item">
+			<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+			</li> --}}
+			</ul>
+		<form class="d-flex">
+			<input class="form-control me-2" href="	/restaurant-name" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success" type="submit">Search</button>
+		</form>
+		</div>
+	</div>
+
+	<section>
+		</div>
+			{{#each restaurants}} 
+			<article class="card" style="width: 18rem; margin: 0 auto; float: none; margin-bottom: 10px;">
+				<img src="{{image}}" class="card-img-top" alt="...">
+				<div class="card-body">
+				<h5 class="card-title">{{name}}</h5>
+				{{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
+				<a class="btn btn-primary" href="/restaurants/{{id}}">View Restaurant</a>
+				</div>
+			</article>
+			{{/each}}
+		</div>
+	</section>

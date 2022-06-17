@@ -1,0 +1,10 @@
+<h1>New Restaurant Form</h1>
+<form action="/new-restaurant" method="post">
+    <label for="name">Restaurant Name:</label>
+    <input type="text" id="name" name="name" required><br/>
+    <label for="image">Image URL:</label>
+    <input type="url" id="image" name="image" required><br/>
+    <button type="submit">Submit a New Restaurant!</button>
+</form> </br>
+<h3>{{restaurantAlert1}}</h3></br>
+<a class="btn btn-primary" href="/restaurants" role="button">Back to Restaurants!</a>
