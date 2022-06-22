@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "seed": "node bin/populateDb.js"
+    "seed": "node bin/populateDb.js",
+    "build": "echo would of built here..."
   },
   "keywords": [],
   "author": "",
